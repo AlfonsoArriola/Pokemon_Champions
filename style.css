@@ -1,0 +1,96 @@
+body{
+	background-color: coral;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.columnLeft {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 30rem;
+    background-image: url(images/Tyrunt.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+     opacity: 0.3;
+}
+
+.columnRight {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 30rem; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.fadein { position:relative; width:500px; height:332px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+
+
+.bar{
+	margin: 2rem 1rem 2rem 1rem;
+	box-shadow: .27rem .27rem rgba(0, 0, 0, 0.5);
+}
+
+
+.hitPoints{
+	height: 2rem;
+	width: 5rem;
+	background-color: green;
+}
+
+.attack{
+   height: 2rem;
+   width: 7rem;
+   background-color: red;
+}
+
+.defense{
+	height: 2rem;
+	width: 6rem;
+	background-color: orange;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .columnLeft{
+        width: 100%;
+    }
+
+    .columnRight{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
