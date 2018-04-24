@@ -1,5 +1,5 @@
 body{
-	background-color: coral;
+	background-color: ;
 }
 
 * {
@@ -11,17 +11,53 @@ body{
     width: 50%;
     padding: 10px;
     height: 30rem;
-    background-image: url(images/Tyrunt.png); 
-    background-size: cover;
+    /*background-image: url(images/pokeball.png);*/
+    background-size: contain;
     background-repeat: no-repeat;
-     opacity: 0.3;
+    /* opacity: 0.3;*/
+    z-index: 5;
 }
+
+.pokeball{
+	 width: 50%;
+    padding: 10px;
+    height: 30rem;
+    z-index: 0;
+    object-fit: contain;
+    position: absolute;
+   /* -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(180deg);*/
+    animation: rotation 50s linear infinite;
+}
+
+
+@keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
 
 .columnRight {
     float: right;
     width: 50%;
     padding: 10px;
     height: 30rem; 
+     background-image: url(images/TyruntC.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* z-index: -1;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);*/
 }
 
 .row:after {
@@ -32,8 +68,27 @@ body{
 
 
 
-.fadein { position:relative; width:500px; height:332px; }
-.fadein img { position:absolute; left:0; top:0; }
+.fadein { 
+	position:relative; 
+/*	width:500px; 
+	height:332px; */
+	/*width: 17rem;
+	line-height: 17rem;*/
+	
+}
+
+.fadein img {
+	 position:absolute; 
+	 left:0; 
+	 top:0; 
+}
+
+.slideImage{
+	height: 17rem;
+	width: 17rem;
+	object-fit: contain;
+
+}
 
 
 
