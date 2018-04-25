@@ -1,10 +1,87 @@
 body{
-	background-color: ;
+	left: 0;
+  margin: 0;
+/*  overflow: hidden;*/
+  position: relative;
 }
 
 * {
     box-sizing: border-box;
 }
+
+.subBody{
+
+}
+
+
+.menu {
+  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  left: -285px;  
+  height: 100vh;
+  position: fixed;
+  width: 285px;
+}
+
+.menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon-menu {
+  color: black;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu i {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .columnLeft {
     float: left;
@@ -19,17 +96,12 @@ body{
 }
 
 .pokeball{
-	 width: 50%;
+	width: 50%;
     padding: 10px;
     height: 30rem;
     z-index: 0;
     object-fit: contain;
     position: absolute;
-   /* -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(180deg);*/
     animation: rotation 50s linear infinite;
 }
 
@@ -52,12 +124,6 @@ body{
      background-image: url(images/TyruntC.png); 
     background-size: cover;
     background-repeat: no-repeat;
-   /* z-index: -1;
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(30deg);*/
 }
 
 .row:after {
@@ -69,12 +135,7 @@ body{
 
 
 .fadein { 
-	position:relative; 
-/*	width:500px; 
-	height:332px; */
-	/*width: 17rem;
-	line-height: 17rem;*/
-	
+	position:relative;
 }
 
 .fadein img {
@@ -84,10 +145,10 @@ body{
 }
 
 .slideImage{
+    margin: 5rem;
 	height: 17rem;
 	width: 17rem;
 	object-fit: contain;
-
 }
 
 
@@ -116,7 +177,11 @@ body{
 	background-color: orange;
 }
 
-
+.bio{
+    height: 33rem;
+    background-color: grey;
+    color: white;
+}
 
 
 
