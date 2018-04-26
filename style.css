@@ -9,6 +9,33 @@ body{
     box-sizing: border-box;
 }
 
+/*#loader {
+	
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}*/
+
+
+
+
+
+
+
 .subBody{
 
 }
@@ -66,19 +93,6 @@ body{
 .icon-menu i {
   margin-right: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -181,6 +195,15 @@ body{
     height: 33rem;
     background-color: grey;
     color: white;
+}
+
+.rotated{
+	transform:rotateZ(90deg);
+	
+	float: right;
+margin-right: 3rem;
+margin-top: 11rem;
+font-size: 7em;
 }
 
 
