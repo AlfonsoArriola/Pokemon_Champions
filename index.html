@@ -2,23 +2,37 @@
 <html>
 <head>
 	 <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>  Cash Money's Top 3</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>  Cash Money's Top 3</title>
+	 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-   <div class="menu"> 
+    <div class="menu"> 
       <!-- Menu icon -->
       <div class="icon-close">
         <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
       </div>
       <!-- Menu -->
-      <ul>
-        <li><a href="#">Tryunt</a></li>
-        <li><a href="#">Litten</a></li>
-        <li><a href="#"></a></li>   
-      </ul>
+		    <ul>
+		        <li>
+		        	<a href="#">
+		        	   <img src="images/tyruntIcon.png">
+		                         Tyrunt
+		            </a>
+		        </li>
+		        <li>
+		        	<a href="#">
+		        	   <img src="images/littenIcon.png">
+		                          Litten
+		            </a>
+		        </li>
+		        <li>
+		        	<a href="#">
+		        	   <img src="images/throhIcon.png">
+		        	               Throh
+		            </a>
+		         </li>   
+		    </ul>
     </div>
 <!-- 
 <div id="loader-wrapper">
@@ -31,17 +45,18 @@
 
 <div class="subBody">
        <div class="icon-menu">
-           <i class="fa fa-bars"></i>
-                  Menu
+       	<i class="fa fa-bars"></i>
+                 Press
+                  <br>
+                 Start
        </div>
 
        <h1>  Cash Money's Top 3 Pokemon!!!</h1>
 
            
-             <h2>  I choose you:</h2>
+             
 
     <div class="row">
-
        <div class="columnLeft" >
              <h2> <span id="pokemonTitleName"></span>!!!!</h2>
                
@@ -51,51 +66,60 @@
 		        		 <img src="images/Tryunt2.png" class="slideImage">
 		        		 <img src="images/Tryunt3.png" class="slideImage">
 		        		 <img src="images/Tryunt5.png" class="slideImage">
-		           
-		                  <img src="http://files.pokefans.net/sprites/xy/animationen/696.gif" class="slideImage">
+		                 <img src="http://files.pokefans.net/sprites/xy/animationen/696.gif" class="slideImage">
 		                 <!--  <img src="https://orig00.deviantart.net/482d/f/2017/195/d/1/d1157400f7e2c809df655d7f1263f9f5-dbeslfl.gif" class="slideImage"> -->
-		                  <img src="https://thumbs.gfycat.com/AthleticIncomparableFurseal-max-1mb.gif" class="slideImage">
+		                 <img src="https://thumbs.gfycat.com/AthleticIncomparableFurseal-max-1mb.gif" class="slideImage">
 			  </div>           
        </div>
 
        <div class="columnRight" >
-            <h2> Stats</h2>
-             <div class="stats">
-        	     <div class="hitPoints bar"> Hit Points: <span id="hpBarNumber"></span> </div>
-        	     <div class=" attack bar"> Attack: <span id="attackBarNumber"></span> </div>
-        	     <div class="defense bar"> Defense: <span id="defenseBarNumber"></span>  </div>
-            </div>
-                
+                                     <h2> Stats</h2>
+	             <div class="stats">
+	        	     <div class="hitPoints bar"> Hit Points: <span id="hpBarNumber"></span> </div>
+	        	     <div class=" attack bar"> Attack: <span id="attackBarNumber"></span> </div>
+	        	     <div class="defense bar"> Defense: <span id="defenseBarNumber"></span>  </div>
+	             </div>        
        </div>
     </div>
 
-
+<!-- 
     <div class="bio">
 
     	<div class="rotated">POKEMON</div>
       <div class="height">
         <h3> Height </h3>
+          <p> <span id="p_height"></span></p>
       </div>
       <div class="weight">
          <h3> Weight </h3>
+          <p><span id="p_weight"></span></p>
       </div>
       <div class="category">
          <h3> Category</h3>
+         <p><span id="p_category"></span></p>
       </div>
+         
 
        <div class="abilities">
           <h3> Abilities</h3>
+          <p><span id="p_abilities"></span></p>
        </div>
 
        <div class="type">
          <h3>Type</h3>
+         <p><span id="p_type"></span></p>
        </div>
        <div class="weaknesses">
           <h3> Weaknesses</h3>
+          <p><span id="p_weaknesses"></span></p>
        </div>
       
-    </div>
+    </div> -->
 
+   <!--  <div class="weaknesses">
+    	
+    </div>
+ -->
 
       
 
@@ -104,8 +128,8 @@
 
     
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
     <script type="text/javascript"  src="main.js"></script>
 </body>
 </html>

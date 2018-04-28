@@ -91,32 +91,31 @@
 // 							 		 getTyruntHP = data1.stats[5].base_stat;
 // 							 		 getTyruntAttack = data1.stats[4].base_stat;
 // 							 		 getTyruntDefense = data1.stats[3].base_stat;
-
 									         
 // 									           for (let i =0; i < data1.abilities.length; i++){
-// 									           	    getTyruntAbilities.push(data1.abilities[i].ability.name);        
+// 									           	    getTyruntAbilities = data1.abilities[i].ability.name;        
 // 									           };
 
-// 							                class Pokemon{
-// 											  constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
-// 												this.name = p_name;
-// 												this.hp = p_hp;
-// 												this.attack = p_attack;
-// 												this.defense = p_defense;
-// 												this.abilities = p_abilities.toString();
-// 										      }	
-// 							                };
+// 							    //             class Pokemon{
+// 											//   constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
+// 											// 	this.name = p_name;
+// 											// 	this.hp = p_hp;
+// 											// 	this.attack = p_attack;
+// 											// 	this.defense = p_defense;
+// 											// 	this.abilities = p_abilities;
+// 										 //      }	
+// 							    //             };
 
-// 											tyrunt = new Pokemon(getTyruntName, getTyruntHP, getTyruntAttack, getTyruntDefense, getTyruntAbilities);
-// 											console.log( tyrunt);
-// 											theSquad.push(tyrunt);
+// 											// tyrunt = new Pokemon(getTyruntName, getTyruntHP, getTyruntAttack, getTyruntDefense, getTyruntAbilities);
+// 											// console.log( tyrunt);
+// 											// theSquad.push(tyrunt);
 										
 
-// 															 $('#pokemonTitleName').text(tyrunt.name);
-// 															 $('#hpBarNumber').text(tyrunt.hp);
-// 															 $('#attackBarNumber').text(tyrunt.attack);
-// 															 $('#defenseBarNumber').text(tyrunt.defense);
-// 															 $('#p_abilities').text(tyrunt.abilities);
+// 											// 				 $('#pokemonTitleName').text(tyrunt.name);
+// 											// 				 $('#hpBarNumber').text(tyrunt.hp);
+// 											// 				 $('#attackBarNumber').text(tyrunt.attack);
+// 											// 				 $('#defenseBarNumber').text(tyrunt.defense);
+// 											// 				 $('#p_abilities').text(tyrunt.abilities);
 
 // 							        }
 // 							});
@@ -137,24 +136,22 @@
 // 								 		 getLittenDefense = data2.stats[3].base_stat;
 								         
 // 									           for (let i =0; i < data2.abilities.length; i++){
-// 									           	    getLittenAbilities.push(data2.abilities[i].ability.name);
-	
-
+// 									           	    getLittenAbilities = data2.abilities[i].ability.name;        
 // 									           };
 
-// 									              class Pokemon{
-// 													constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
-// 														this.name = p_name;
-// 														this.hp = p_hp;
-// 														this.attack = p_attack;
-// 														this.defense = p_defense;
-// 														this.abilities = p_abilities.toString();
-// 												    }	
-// 									              };
+// 									    //           class Pokemon{
+// 													// constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
+// 													// 	this.name = p_name;
+// 													// 	this.hp = p_hp;
+// 													// 	this.attack = p_attack;
+// 													// 	this.defense = p_defense;
+// 													// 	this.abilities = p_abilities;
+// 												 //    }	
+// 									    //           };
 
-// 													litten = new Pokemon(getLittenName, getLittenHP, getLittenAttack, getLittenDefense, getLittenAbilities);
-// 													console.log(litten);
-// 													theSquad.push(litten);
+// 													// litten = new Pokemon(getLittenName, getLittenHP, getLittenAttack, getLittenDefense, getLittenAbilities);
+// 													// console.log(litten);
+// 													// theSquad.push(litten);
 													
 
 
@@ -179,22 +176,22 @@
 // 								 		 getThrohDefense = data3.stats[3].base_stat;
 								         
 // 									           for (let i =0; i < data3.abilities.length; i++){
-// 									           	    getThrohAbilities.push(data3.abilities[i].ability.name);        
+// 									           	    getThrohAbilities = data3.abilities[i].ability.name;        
 // 									           };
 
-// 										              class Pokemon{
-// 														constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
-// 															this.name = p_name;
-// 															this.hp = p_hp;
-// 															this.attack = p_attack;
-// 															this.defense = p_defense;
-// 															this.abilities = p_abilities.toString();
-// 													    }	
-// 										              };
+// 										    //           class Pokemon{
+// 														// constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
+// 														// 	this.name = p_name;
+// 														// 	this.hp = p_hp;
+// 														// 	this.attack = p_attack;
+// 														// 	this.defense = p_defense;
+// 														// 	this.abilities = p_abilities;
+// 													 //    }	
+// 										    //           };
 
-// 															throh = new Pokemon(getThrohName, getThrohHP, getThrohAttack, getThrohDefense, getThrohAbilities);
-// 															console.log(throh);
-// 															theSquad.push(throh);
+// 														// 	throh = new Pokemon(getThrohName, getThrohHP, getThrohAttack, getThrohDefense, getThrohAbilities);
+// 														// 	console.log(throh);
+// 														// 	theSquad.push(throh);
 															
 // 							        }
 // 							}); 
@@ -220,25 +217,47 @@
 
 
 // class Cash_Money{
-// 	constructor(theSquad){
-// 		this.Squad = theSquad;
+// 	constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
+// 		   	    this.name = p_name;
+// 				this.hp = p_hp;
+// 				this.attack = p_attack;
+// 				this.defense = p_defense;
+// 				this.abilities = p_abilities;
 // 	}
 
 // 	all(){
-//      	return this.Squad;
+     	
 // 	}
 
 // 	get(name){
 // 		if(name.tolowerCase == tyrunt){
-// 			return this.Squad[0];
+// 			return
 // 		} else if(name.tolowerCase == litten){
-// 			return this.Squad[1];
+// 			return 
 // 		} else if(name.tolowerCase == throh){
-// 			return this.Squad[2];
+// 			return 
 // 		}
 
 // 	}
 // }
+
+
+
+
+
+
+
+
+
+//     class Pokemon{
+// 		constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
+// 				this.name = p_name;
+// 				this.hp = p_hp;
+// 				this.attack = p_attack;
+// 				this.defense = p_defense;
+// 				this.abilities = p_abilities;
+// 													    }	
+// 										              };
 
 // // let IwannnaBeTheVeryBest = new Cash_Money('tyrunt', 'litten');
 

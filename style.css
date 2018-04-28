@@ -1,16 +1,19 @@
 body{
-	left: 0;
-  margin: 0;
-/*  overflow: hidden;*/
-  position: relative;
+    left: 0;
+	margin: 0;
+	
+	position: relative;
 }
 
 * {
     box-sizing: border-box;
 }
 
+h1{
+	margin-left: 3rem;
+}
 /*#loader {
-	
+
 }
 
 #loader-wrapper .loader-section {
@@ -30,19 +33,12 @@ body{
     right: 0;
 }*/
 
-
-
-
-
-
-
+/*_____________________________   MENU    ___________________________*/
 .subBody{
-
 }
 
-
 .menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  background: #202024;
   left: -285px;  
   height: 100vh;
   position: fixed;
@@ -63,6 +59,7 @@ body{
   padding-bottom: 3px;
   padding-left: 20px;
   padding-top: 3px;
+  text-align: center;
 }
 
 .menu a {
@@ -94,58 +91,20 @@ body{
   margin-right: 5px;
 }
 
-
-
-
+/*--------------------------- Main Body   ________________________________*/
 .columnLeft {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 2rem;
     height: 30rem;
-    /*background-image: url(images/pokeball.png);*/
     background-size: contain;
     background-repeat: no-repeat;
-    /* opacity: 0.3;*/
     z-index: 5;
 }
 
-.pokeball{
-	width: 50%;
-    padding: 10px;
-    height: 30rem;
-    z-index: 0;
-    object-fit: contain;
-    position: absolute;
-    animation: rotation 50s linear infinite;
+.columnLeft h2{
+	text-align: center;
 }
-
-
-@keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
-}
-
-
-.columnRight {
-    float: right;
-    width: 50%;
-    padding: 10px;
-    height: 30rem; 
-     background-image: url(images/TyruntC.png); 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 
 .fadein { 
@@ -165,8 +124,39 @@ body{
 	object-fit: contain;
 }
 
+.pokeball{
+	width: 50%;
+    padding: 10px;
+    height: 30rem;
+    z-index: 1;
+    object-fit: contain;
+    position: absolute;
+    animation: rotation 50s linear infinite;
+}
+
+@keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.columnRight {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 30rem; 
+    background-image: url(images/TyruntC.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
+.stats{
+	background-color: grey;
+}
 .bar{
 	margin: 2rem 1rem 2rem 1rem;
 	box-shadow: .27rem .27rem rgba(0, 0, 0, 0.5);
@@ -175,40 +165,48 @@ body{
 
 .hitPoints{
 	height: 2rem;
-	width: 5rem;
+	width: 50%;
 	background-color: green;
 }
 
 .attack{
    height: 2rem;
-   width: 7rem;
+   width: 20%;
    background-color: red;
 }
 
 .defense{
 	height: 2rem;
-	width: 6rem;
+	width: 60%;
 	background-color: orange;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 .bio{
     height: 33rem;
+    padding: 4rem;
     background-color: grey;
     color: white;
+    z-index: 5;
 }
 
 .rotated{
 	transform:rotateZ(90deg);
-	
-	float: right;
-margin-right: 3rem;
-margin-top: 11rem;
-font-size: 7em;
+    float: right;
+    margin-right: 3rem;
+    margin-top: 11rem;
+    font-size: 7em;
 }
 
 
 
-
+/*))))))))))))))))))))))   Media Queries  ((((((((((((((((((((((((((((((((((((((((((((((*/
 
 @media screen and (max-width: 600px) {
     .columnLeft{
