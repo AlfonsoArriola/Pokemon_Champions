@@ -1,7 +1,8 @@
 body{
-    left: 0;
+  left: 0;
 	margin: 0;
-	
+  /*font-family: 'Open Sans', sans-serif;*/
+  color: #CC474B;
 	position: relative;
 }
 
@@ -9,9 +10,7 @@ body{
     box-sizing: border-box;
 }
 
-h1{
-	margin-left: 3rem;
-}
+
 /*#loader {
 
 }
@@ -43,23 +42,24 @@ h1{
   height: 100vh;
   position: fixed;
   width: 285px;
+
 }
 
 .menu ul {
-  border-top: 1px solid #636366;
+  border-top: 1px solid #CC474B;
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .menu li {
-  border-bottom: 1px solid #636366;
+  border-bottom: 1px solid #CC474B;
   font-family: 'Open Sans', sans-serif;
   line-height: 45px;
   padding-bottom: 3px;
   padding-left: 20px;
   padding-top: 3px;
-  text-align: center;
 }
 
 .menu a {
@@ -67,6 +67,7 @@ h1{
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #FD0E35;
 }
 
 .icon-close {
@@ -87,11 +88,49 @@ h1{
   text-transform: uppercase;
 }
 
-.icon-menu i {
+.icon-menu img {
   margin-right: 5px;
 }
 
-/*--------------------------- Main Body   ________________________________*/
+
+
+/*  ____________________________   Home Page    _________________________-*/
+
+.homepage{
+  text-align: center;
+  background-image: url(https://78.media.tumblr.com/74657bc14a6f2acbca87fccb15768c98/tumblr_oilno7lc6C1ryw5evo1_500.gif);
+  background-repeat: no-repeat;
+  float: center;
+  /*background-image: cover;*/
+}
+
+.homepage h1{
+  font-size: 11em;
+  color: crimson;
+  text-shadow: 2px 2px black;
+  font-family: 'Molle', cursive;
+  text-align: center;
+}
+
+.intro{
+  text-align: center;
+  font-size: 3rem;
+  background-image: url(images/blackC.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: center;
+
+}
+
+
+
+
+/*--------------------------- Tryunt  ________________________________*/
+#pokemonTitleName{
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
 .columnLeft {
     float: left;
     width: 50%;
@@ -118,9 +157,8 @@ h1{
 }
 
 .slideImage{
-    margin: 5rem;
-	height: 17rem;
-	width: 17rem;
+  margin: 5rem;
+	height: 22rem;
 	object-fit: contain;
 }
 
@@ -128,7 +166,7 @@ h1{
 	width: 50%;
     padding: 10px;
     height: 30rem;
-    z-index: 1;
+    z-index: 0;
     object-fit: contain;
     position: absolute;
     animation: rotation 50s linear infinite;
@@ -155,7 +193,7 @@ h1{
 
 
 .stats{
-	background-color: grey;
+	
 }
 .bar{
 	margin: 2rem 1rem 2rem 1rem;

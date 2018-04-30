@@ -1,0 +1,24 @@
+body{
+	color: crimson;
+	font-family: 'Molle', cursive;
+	text-transform: center;
+
+	background-image: url(https://78.media.tumblr.com/74657bc14a6f2acbca87fccb15768c98/tumblr_oilno7lc6C1ryw5evo1_500.gif);
+	background-repeat: no-repeat;
+	background-image: contain;
+	/*filter:blur(1px);*/
+}
+
+h1{
+
+	font-size: 11em;
+	color: crimson;
+	text-shadow: 2px 2px black;
+	font-family: 'Molle', cursive;
+	
+}
+
+img{
+	height: 20rem;
+	/*filter:blur(1px);*/
+}

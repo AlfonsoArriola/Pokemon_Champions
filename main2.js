@@ -217,12 +217,21 @@
 
 
 // class Cash_Money{
-// 	constructor(p_name, p_hp, p_attack, p_defense, p_abilities){
-// 		   	    this.name = p_name;
-// 				this.hp = p_hp;
-// 				this.attack = p_attack;
-// 				this.defense = p_defense;
-// 				this.abilities = p_abilities;
+// 	constructor(pokemonDNA){
+// 		   	    this.pokemonDNA.name = p_name;
+// 				this.pokemonDNA.stats[5].base_stat = p_hp;
+// 				this.pokemonDNA.stats[4].base_stat = p_attack;
+// 				this.pokemonDNA.stats[3].base_stat = p_defense;
+
+// 				      let pokeMoveArray =[];
+
+// 				           for (let i =0; i < pokemonDNA.abilities.length; i++){
+// 					         pokeMoveArray.push(data1.abilities[i].ability.name); 
+// 					           pokemonDNA.p_abilities = pokeMoveArray;       
+// 						   };
+
+
+// 				this.pokemonDNA.p_abilities.toString() = p_abilities;
 // 	}
 
 // 	all(){
@@ -256,7 +265,9 @@
 // 				this.attack = p_attack;
 // 				this.defense = p_defense;
 // 				this.abilities = p_abilities;
-// 													    }	
+// 													    }
+                  
+
 // 										              };
 
 // // let IwannnaBeTheVeryBest = new Cash_Money('tyrunt', 'litten');
