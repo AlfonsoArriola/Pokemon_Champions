@@ -233,20 +233,39 @@ body{
 
 
 .hitPoints{
-	background-color: #e20000;
- /* background-color:linear-gradient(red, white);*/
-
+	
+  background: linear-gradient( 45deg, #ffffff, #e20000);
   
 }
 
 .attack{
+  background: linear-gradient( 45deg, #e20000, #e66465);
    
-   background-color: #e9241d;
+   /*background-color: #e9241d;*/
 }
 
 .defense{
-	
-	background-color: #FF355E;
+	background: linear-gradient( 45deg, #e66465, #ff355e);
+
+}
+
+.speed{
+  background-color:#ff0505;
+  display: none;
+
+}
+
+.specialDef{
+  background-color: coral;
+  display: none;
+}
+
+#moreInfo{
+
+  height: 20rem;
+  background-color: grey;
+  display: none;
+
 }
 
 .row:after {
@@ -283,6 +302,21 @@ body{
   text-shadow: 1px 1px #e21d1d;
   color: black;
   margin: 1rem;
+
+}
+
+
+button{
+   height: 6rem;
+    width: 7em;
+    font-size: 1.4em;
+    margin-left: 5rem;
+    padding: 1rem;
+    border-radius: 33px;
+    color: #ff0505;
+    background:black;
+    border-radius: 3px solid;
+    border-color: #ff0505;
 
 }
 
