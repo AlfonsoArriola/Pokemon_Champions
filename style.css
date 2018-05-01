@@ -42,7 +42,6 @@ body{
   height: 100vh;
   position: fixed;
   width: 285px;
-
 }
 
 .menu ul {
@@ -50,7 +49,6 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .menu li {
@@ -106,6 +104,7 @@ body{
 
 .homepage h1{
   font-size: 11em;
+  margin: 0rem;
   color: crimson;
   text-shadow: 2px 2px black;
   font-family: 'Molle', cursive;
@@ -119,17 +118,17 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   float: center;
-
 }
 
 
 
 
 /*--------------------------- Tryunt  ________________________________*/
-#pokemonTitleName{
+/*#tyruntTitleName{
   text-transform: uppercase;
   font-size: 2em;
-}
+  color: #FD0E35;
+}*/
 
 .columnLeft {
     float: left;
@@ -143,6 +142,9 @@ body{
 
 .columnLeft h2{
 	text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  color: #FD0E35;
 }
 
 
@@ -181,42 +183,70 @@ body{
 		}
 }
 
-.columnRight {
-    float: right;
-    width: 50%;
-    padding: 10px;
-    height: 30rem; 
-    background-image: url(images/TyruntC.png); 
+.tyruntBG{
+   background-image: url(images/TyruntC.png); 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-.stats{
-	
+.littenBG{
+  background-image: url(images/littenBig.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
+
+.throhBG{
+   background-image: url(images/throhBig.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.columnRight {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 30rem; 
+  
+}
+
+.vanillaStats{
+  font-size: 3em;
+  color: black;
+}
+
+.stats{
+	color: black;
+  font-size: 2em;
+  z-index: 9;
+}
+
 .bar{
 	margin: 2rem 1rem 2rem 1rem;
 	box-shadow: .27rem .27rem rgba(0, 0, 0, 0.5);
+  height: 4rem;
+  width: 33%
+  color:black;
+
 }
 
 
 .hitPoints{
-	height: 2rem;
-	width: 50%;
-	background-color: green;
+	background-color: #e20000;
+ /* background-color:linear-gradient(red, white);*/
+
+  
 }
 
 .attack{
-   height: 2rem;
-   width: 20%;
-   background-color: red;
+   
+   background-color: #e9241d;
 }
 
 .defense{
-	height: 2rem;
-	width: 60%;
-	background-color: orange;
+	
+	background-color: #FF355E;
 }
 
 .row:after {
@@ -243,9 +273,40 @@ body{
 }
 
 
+.abilitiesList{
+  background-color: rgba(240,128,128, 0.4);
+  height: 15rem;
+  padding: 1rem;
+  font-size: 2em;
+  font-weight: bold;
+  border: 1px solid #D92121;
+  text-shadow: 1px 1px #e21d1d;
+  color: black;
+  margin: 1rem;
+
+}
+
+
 
 /*))))))))))))))))))))))   Media Queries  ((((((((((((((((((((((((((((((((((((((((((((((*/
+@media screen and (max-width: 850px) {
+    .columnLeft{
+        width: 100%;
+        margin-bottom: 7rem;
 
+    }
+
+    .columnRight{
+        width: 100%;
+    }
+
+    .slideImage{
+      /*margin:  auto;*/
+      height: 15rem;
+      object-fit: contain;
+      float: center;
+     }
+}
 @media screen and (max-width: 600px) {
     .columnLeft{
         width: 100%;
@@ -254,7 +315,39 @@ body{
     .columnRight{
         width: 100%;
     }
+
+
+    .homepage h1{
+      font-size: 5em;
+    }
+
+    .intro{
+      text-align: center;
+      font-size: 2rem;
+      background-image: url(images/blackC.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      float: center;
+
+     }
+
+   /* .slideImage{
+      margin:  auto;
+      height: 15rem;
+      object-fit: contain;
+      float: left;
+     }*/
+
+    .pokeball{
+      width: 70%;
+      
+    }
+
+
+
 }
+
+
 
 
 

@@ -103,7 +103,7 @@ $(document).ready(function(){
 
 									         
 									           for (let i =0; i < data1.abilities.length; i++){
-									           	    getTyruntAbilities.push(data1.abilities[i].ability.name);        
+									           	    getTyruntAbilities.push(" " + data1.abilities[i].ability.name);        
 									           };
 
 							                class Pokemon{
@@ -121,11 +121,18 @@ $(document).ready(function(){
 											// theSquad.push(tyrunt);
 										
 
-															 $('#pokemonTitleName').text(tyrunt.name);
-															 $('#hpBarNumber').text(tyrunt.hp);
-															 $('#attackBarNumber').text(tyrunt.attack);
-															 $('#defenseBarNumber').text(tyrunt.defense);
-															 $('#p_abilities').text(tyrunt.abilities);
+										   
+
+															 $('#tyruntTitleName').text(tyrunt.name.toUpperCase());
+															 $('#tyruntHpBarNumber').text(tyrunt.hp);
+															 $('#tyruntAttackBarNumber').text(tyrunt.attack);
+															 $('#tyruntDefenseBarNumber').text(tyrunt.defense);
+															 $('#tyruntAbilities').text(tyrunt.abilities);
+
+
+													$('.tyruntHPgrahped').css('width', (tyrunt.hp *4));
+													$('.tyruntATKgraphed').css('width', (tyrunt.attack *4));
+													$('.tyruntDEFgraphed').css('width', (tyrunt.defense *4));
 
 							        }
 							});
@@ -146,7 +153,7 @@ $(document).ready(function(){
 								 		 getLittenDefense = data2.stats[3].base_stat;
 								         
 									           for (let i =0; i < data2.abilities.length; i++){
-									           	    getLittenAbilities.push(data2.abilities[i].ability.name);
+									           	    getLittenAbilities.push(" " + data2.abilities[i].ability.name);
 	
 
 									           };
@@ -164,6 +171,16 @@ $(document).ready(function(){
 													litten = new Pokemon(getLittenName, getLittenHP, getLittenAttack, getLittenDefense, getLittenAbilities);
 													console.log(litten);
 													// theSquad.push(litten);
+
+													         $('#littenTitleName').text(litten.name.toUpperCase());
+															 $('#littenHpBarNumber').text(litten.hp);
+															 $('#littenAttackBarNumber').text(litten.attack);
+															 $('#littenDefenseBarNumber').text(litten.defense);
+															 $('#littenAbilities').text(litten.abilities);
+
+													$('.littenHPgrahped').css('width', (litten.hp *4));
+													$('.littenATKgraphed').css('width', (litten.attack *4));
+													$('.littenDEFgraphed').css('width', (litten.defense *4));
 													
 
 
@@ -188,7 +205,7 @@ $(document).ready(function(){
 								 		 getThrohDefense = data3.stats[3].base_stat;
 								         
 									           for (let i =0; i < data3.abilities.length; i++){
-									           	    getThrohAbilities.push(data3.abilities[i].ability.name);        
+									           	    getThrohAbilities.push(" " + data3.abilities[i].ability.name);        
 									           };
 
 										              class Pokemon{
@@ -204,6 +221,16 @@ $(document).ready(function(){
 															throh = new Pokemon(getThrohName, getThrohHP, getThrohAttack, getThrohDefense, getThrohAbilities);
 															console.log(throh);
 															// theSquad.push(throh);
+
+															 $('#throhTitleName').text(throh.name.toUpperCase());
+															 $('#throhHpBarNumber').text(throh.hp);
+															 $('#throhAttackBarNumber').text(throh.attack);
+															 $('#throhDefenseBarNumber').text(throh.defense);
+															 $('#throhAbilities').text(throh.abilities);
+
+													$('.throhHPgrahped').css('width', (throh.hp *4));
+													$('.throhATKgraphed').css('width', (throh.attack *4));
+													$('.throhDEFgraphed').css('width', (throh.defense *4));
 															
 							        }
 							}); 
