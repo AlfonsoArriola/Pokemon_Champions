@@ -40,6 +40,7 @@ $(document).ready(function(){
 
 
 
+
 	  // -________________________S__L__I__D__E__S____________________________________________________
 
 		    $(function(){
@@ -50,11 +51,6 @@ $(document).ready(function(){
 		                   .end().appendTo('.fadein');}, 
 		                 4000);
 		    });
-
-
-
-
-
 
 		    
 
@@ -130,8 +126,8 @@ $(document).ready(function(){
 							                };
 
 											tyrunt = new Pokemon(getTyruntName, getTyruntHP, getTyruntAttack, getTyruntDefense, getTyruntAbilities, getTyruntSpeed, getTyruntSpecialDefense);
-											console.log( tyrunt);
-											// theSquad.push(tyrunt);
+											
+											
 										
 
 										   
@@ -192,14 +188,14 @@ $(document).ready(function(){
 														this.abilities = p_abilities.toString();
 														this.speed = p_speed;
 														this.specialDefense = p_specialDefense;
-														// this.types = p_types.toString();
+														
 
 												    }	
 									              };
 
 													litten = new Pokemon(getLittenName, getLittenHP, getLittenAttack, getLittenDefense, getLittenAbilities, getLittenSpeed, getLittenSpecialDefense);
-													console.log(litten);
-													// theSquad.push(litten);
+													
+													
 
 													         $('#littenTitleName').text(litten.name.toUpperCase());
 															 $('#littenHpBarNumber').text(litten.hp);
@@ -257,8 +253,7 @@ $(document).ready(function(){
 										              };
 
 															throh = new Pokemon(getThrohName, getThrohHP, getThrohAttack, getThrohDefense, getThrohAbilities, getThrohSpeed, getThrohSpecialDefense);
-															console.log(throh);
-															// theSquad.push(throh);
+														
 
 															 $('#throhTitleName').text(throh.name.toUpperCase());
 															 $('#throhHpBarNumber').text(throh.hp);
@@ -277,9 +272,9 @@ $(document).ready(function(){
 							        }
 							}); 
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  CASH MONEY   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  CASH MONEY   &  Button        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-                   $.when(apiTyruntCall,apiLittenCall, apiThrohCall).done(function(apiTyruntCall,apiLittenCall, apiThrohCall){
+                   $.when(apiTyruntCall, apiLittenCall, apiThrohCall).done(function(apiTyruntCall,apiLittenCall, apiThrohCall){
                                     console.log('go!!, go!!!!');
 
        //                      class Cash_Money{
@@ -318,10 +313,13 @@ $(document).ready(function(){
 
 
 													             $('button').click(function(){
-													             	  $('.extra').slideToggle();
-													             	  
+                         											
 
-																															             	 
+													             	  $('.extra').slideToggle();
+
+                                                                          
+
+																														             	 
 													             });
 
 
@@ -339,35 +337,7 @@ $(document).ready(function(){
 
 
 
-// ================================     Jquery Ends/ JS Begins   +++++++++++++++++++++++++
 
-
-
-// class Cash_Money{
-// 	constructor(throh, litten, tyrunt){
-// 		this.throh = cashThroh;
-// 		this.litten = cashLitten;
-// 		this.tyrunt = cashTyrunt;
-
-// 	}
-
-// 	all(){
-//      	theSquad.push(cashTyrunt, cashThroh, cashLitten);
-//      	return theSquad;
-// 	}
-
-// 	// get(name){
-// 	//       for(let i = 0; )
-
-// 	// }
-// }
-
-// let IwannnaBeTheVeryBest = new Cash_Money(throh,litten, tyrunt);
-
-// console.log(IwannnaBeTheVeryBest.all());
-
-
-//   ++++++++++++++++   practice bar graph ++++++++++++++++
 
 
 

@@ -11,26 +11,7 @@ body{
 }
 
 
-/*#loader {
 
-}
-
-#loader-wrapper .loader-section {
-    position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: #222222;
-    z-index: 1000;
-}
- 
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
- 
-#loader-wrapper .loader-section.section-right {
-    right: 0;
-}*/
 
 /*_____________________________   MENU    ___________________________*/
 .subBody{
@@ -99,7 +80,6 @@ body{
   background-image: url(https://78.media.tumblr.com/74657bc14a6f2acbca87fccb15768c98/tumblr_oilno7lc6C1ryw5evo1_500.gif);
   background-repeat: no-repeat;
   float: center;
-  /*background-image: cover;*/
 }
 
 .homepage h1{
@@ -124,11 +104,7 @@ body{
 
 
 /*--------------------------- Tryunt  ________________________________*/
-/*#tyruntTitleName{
-  text-transform: uppercase;
-  font-size: 2em;
-  color: #FD0E35;
-}*/
+
 
 .columnLeft {
     float: left;
@@ -165,7 +141,7 @@ body{
 }
 
 .pokeball{
-	width: 50%;
+	  width: 50%;
     padding: 10px;
     height: 30rem;
     z-index: 0;
@@ -194,7 +170,6 @@ body{
   background-image: url(images/littenBig.png); 
     background-size: contain;
     background-repeat: no-repeat;
-
 }
 
 .throhBG{
@@ -208,7 +183,6 @@ body{
     width: 50%;
     padding: 10px;
     height: 30rem; 
-  
 }
 
 .vanillaStats{
@@ -228,31 +202,24 @@ body{
   height: 4rem;
   width: 33%
   color:black;
-
 }
 
 
 .hitPoints{
-	
   background: linear-gradient( 45deg, #ffffff, #e20000);
-  
 }
 
 .attack{
   background: linear-gradient( 45deg, #e20000, #e66465);
-   
-   /*background-color: #e9241d;*/
 }
 
 .defense{
 	background: linear-gradient( 45deg, #e66465, #ff355e);
-
 }
 
 .speed{
   background-color:#ff0505;
   display: none;
-
 }
 
 .specialDef{
@@ -261,11 +228,9 @@ body{
 }
 
 #moreInfo{
-
   height: 20rem;
   background-color: grey;
   display: none;
-
 }
 
 .row:after {
@@ -302,7 +267,6 @@ body{
   text-shadow: 1px 1px #e21d1d;
   color: black;
   margin: 1rem;
-
 }
 
 
@@ -317,9 +281,11 @@ button{
     background:black;
     border-radius: 3px solid;
     border-color: #ff0505;
-
 }
 
+#testing2{
+  display: none;
+}
 
 
 /*))))))))))))))))))))))   Media Queries  ((((((((((((((((((((((((((((((((((((((((((((((*/
@@ -327,7 +293,6 @@ button{
     .columnLeft{
         width: 100%;
         margin-bottom: 7rem;
-
     }
 
     .columnRight{
@@ -335,7 +300,6 @@ button{
     }
 
     .slideImage{
-      /*margin:  auto;*/
       height: 15rem;
       object-fit: contain;
       float: center;
@@ -349,7 +313,6 @@ button{
     .columnRight{
         width: 100%;
     }
-
 
     .homepage h1{
       font-size: 5em;
@@ -365,19 +328,10 @@ button{
 
      }
 
-   /* .slideImage{
-      margin:  auto;
-      height: 15rem;
-      object-fit: contain;
-      float: left;
-     }*/
 
     .pokeball{
-      width: 70%;
-      
+      width: 70%;  
     }
-
-
 
 }
 
