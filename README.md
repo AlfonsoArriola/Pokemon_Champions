@@ -13,4 +13,8 @@
    
      ##  Site Features
       Makes API request to pokeapi.co 
+      
+      
+![alt text](https://raw.githubusercontent.com/AlfonsoArriola/read_me_images/master/cherrybomb.jpg)    
+      
      
