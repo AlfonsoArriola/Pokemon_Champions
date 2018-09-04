@@ -1,16 +1,19 @@
 body {
     left: 0;
     margin: 0;
-    /*font-family: 'Open Sans', sans-serif;*/
     color: #CC474B;
     position: relative;
 }
+
 * {
     box-sizing: border-box;
 }
 /*_____________________________   MENU    ___________________________*/
 
-.subBody {}
+.subBody {
+
+}
+
 .menu {
     background: #202024;
     left: -285px;
@@ -54,6 +57,8 @@ body {
     padding-top: 25px;
     text-decoration: none;
     text-transform: uppercase;
+    color: crimson;
+    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 30px white, 0 0 40px gold, 0 0 55px crimson, 0 0 75px crimson;
 }
 .icon-menu img {
     margin-right: 5px;
@@ -61,12 +66,16 @@ body {
 /*  ____________________________   Home Page    _________________________-*/
 
 .homepage {
+    height: 100%;
     text-align: center;
     background-image: url(https://78.media.tumblr.com/74657bc14a6f2acbca87fccb15768c98/tumblr_oilno7lc6C1ryw5evo1_500.gif);
     background-repeat: no-repeat;
-    float: center;
+    background-position: center;
+    background-size: contain;
 }
+
 .homepage h1 {
+    padding-top: 3rem;
     font-size: 11em;
     margin: 0rem;
     color: crimson;
@@ -74,14 +83,14 @@ body {
     font-family: 'Molle', cursive;
     text-align: center;
 }
-.intro {
+/*.intro {
     text-align: center;
     font-size: 3rem;
     background-image: url(images/blackC.png);
     background-repeat: no-repeat;
     background-size: contain;
     float: center;
-}
+}*/
 /*--------------------------- Tryunt  ________________________________*/
 
 .columnLeft {
